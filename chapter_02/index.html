@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="css3-selector">
-        <h3>css3选择器</h3>>
+    <div id="top" class="css3-selector">
+        <h3>css3选择器</h3>
         <p>前言：利用css3选择器可以在不修改html结构的基础上，通过不同的规则和选择组合实现不同的页面样式效果</p>
         <p>
-            css3选择器：基本选择器、层次选择器、伪类选择器（动态伪类选择器、目标伪类选择器、语言伪类选择器、UI元素状态伪类选择器、结构伪类选择器、否定伪类选择器）、伪元素、属性选择器
+            css3选择器：基本选择器、层次选择器、伪类选择器（动态伪类选择器、<a href="#targetClass">目标伪类选择器</a>、语言伪类选择器、UI元素状态伪类选择器、结构伪类选择器、否定伪类选择器）、伪元素、属性选择器
         </p>
         <div class="basic-selector">
-            <h3>基本选择器：</h3>>
+            <h3>基本选择器：</h3>
             <p>*&nbsp;&nbsp;&nbsp;&nbsp;通配符选择器&nbsp;&nbsp;&nbsp;&nbsp;选中所有html元素</p>
             <p>E&nbsp;&nbsp;&nbsp;&nbsp;元素选择器&nbsp;&nbsp;&nbsp;&nbsp;选中指定类型的html元素</p>
             <p>ID&nbsp;&nbsp;&nbsp;&nbsp;ID选择器&nbsp;&nbsp;&nbsp;&nbsp;选中指定ID的html元素</p>
@@ -35,7 +35,7 @@
             <h3>伪类选择器</h3>
             <div class="dynamiPseudoClass-selector">
                 <h3>动态伪类选择器：</h3>
-                <p>动态伪类分为两种：锚点伪类和用户行为伪类</p>
+                <p><a href="#">动态伪类分为两种：锚点伪类和用户行为伪类</a></p>
                 <p>E:link&nbsp;&nbsp;链接伪类&nbsp;&nbsp;选择匹配的E元素，匹配元素被定义了超链接并未被访问过，常用于链接锚点上</p>
                 <p>E:visited&nbsp;&nbsp;链接伪类&nbsp;&nbsp;选择匹配的E元素，匹配元素被定义了超链接并已被访问过，常用于链接锚点上</p>
                 <p>E:hover&nbsp;&nbsp;用户行为伪类&nbsp;&nbsp;选择匹配的E元素，用户鼠标放在匹配的E元素上，IE6中只支持a:hover</p>
@@ -46,12 +46,12 @@
             </div>
             <div class="targetPseudoClass-selector">
                 <h3>目标伪类选择器：</h3>
-                <p>E:target&nbsp;&nbsp;选择匹配E的所有元素，且匹配元素被相关URL指向</p>
+                <p id="targetClass">E:target&nbsp;&nbsp;选择匹配E的所有元素，且匹配元素被相关URL指向</p>
                 <p>浏览器兼容性：IE9及以上，Opera9.6及以上以及其它全部主流浏览器都支持</p>
             </div>
             <div class="lanPseudoClass-selector">
                 <h3>语言伪类选择器：</h3>
-                <p>E:lang(en)&nbsp;&nbsp;选择匹配E的所有元素，且匹配元素指定了lang属性，而且其值为language</p>
+                <p>E:lang(en)&nbsp;&nbsp;选择匹配E的所有元素，<q>且匹配元素指定了lang属性</q>，而且其值为language</p>
                 <p>浏览器兼容性：IE8及以上、Opera9.2及以上浏览器全部兼容</p>
             </div>
             <div class="UIPseudoClass-selector">

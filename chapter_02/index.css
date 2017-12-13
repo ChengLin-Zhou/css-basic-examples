@@ -1,17 +1,129 @@
+/* 元素选择器(基本选择器)--start */
 body {
     margin: 0px;
     padding: 0px;
 }
+p {
+    margin: 0px;
+    padding: 0px;
+}
+/* 元素选择器--end */
 
-* {
+/* 群组选择器(基本选择器)--start */
+dl,dd,dt,li {
+    display: none;
+}
+/* 群组选择器--end */
+
+/* 通配符选择器(基本选择器)--start */
+* {                         
     margin:  0px;
     padding: 0px;
 }
+/* 通配符选择器--end */
 
+/* 类选择器(基本选择器)--start */
 .css3-selector {
     text-align: center;
 }
 
 .basic-selector {
-    
+    padding: 5px 0px;
 }
+/* 类选择器--end */
+
+/* ID选择器(基本选择器)--start */
+#top {
+    font-size: 14px;
+}
+/* ID选择器--end */
+
+
+
+
+
+/* 后代选择器(层次选择器)--start */
+#top h3 {
+    color: green;
+}
+
+/* 后代选择器--end */
+
+/* 子选择器(层次选择器)--start */
+#top>h3 {
+    font-size: 30px;
+}
+/* 子选择器--end */
+
+/* 相邻兄弟选择器(层次选择器)--start */
+#top>h3+p{
+    background: orange;
+    color: white;
+}
+/* 相邻兄弟选择器--end */
+
+/* 通用选择器(层次选择器)--start */
+#top>h3~p{
+    color: red;
+}
+/* 通用选择器--end */
+
+
+
+
+/* 伪类选择器（包含六种） */
+
+/* 动态伪类选择器(链接伪类\用户行为伪类)--start */
+.dynamiPseudoClass-selector a:link {/* 链接伪类 */
+    background: gray;
+    color: green;
+    font-size: 14px;
+    font-weight: normal;
+}
+.dynamiPseudoClass-selector a:visited {/* 链接伪类 */
+    background: gray;
+    color: red;
+    font-size: 12px;
+    font-weight: normal;
+}
+.dynamiPseudoClass-selector a:hover {/* 用户行为伪类 */
+    background: gray;
+    color: orange;
+    font-size: 18px;
+    font-weight: normal;
+}
+.dynamiPseudoClass-selector a:focus {/* 用户行为伪类 */
+    background: gray;
+    color: rgb(55, 8, 197);
+    font-size: 16px;
+    font-weight: normal;
+}
+.dynamiPseudoClass-selector a:active {/* 用户行为伪类 */
+    background: gray;
+    color: purple;
+    font-size: 20px;
+    font-weight: normal;
+}
+/* 动态伪类选择器--end */
+
+/*  目标伪类选择器--start */
+.targetPseudoClass-selector p:target {
+    background: green;
+}
+/*  目标伪类选择器--end */
+
+/*  语言伪类选择器--start */
+:lang(en) {
+    quotes: '"' '"';
+}
+:lang(en) q {
+    color: orchid;
+}
+
+:lang(fr) {
+    quotes: '"' '"';
+}
+:lang(fr) q {
+    color: green;
+}
+/*  语言伪类选择器--end */
