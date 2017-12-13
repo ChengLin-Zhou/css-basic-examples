@@ -23,9 +23,56 @@
             <p>selector,selector1&nbsp;&nbsp;&nbsp;&nbsp;群组选择器&nbsp;&nbsp;&nbsp;&nbsp;选中每一个匹配的元素的合集的html元素</p>
             <p>五大主流浏览器全部兼容</p>
         </div>
+        <div class="arrangement-selector">
+            <h3>层次选择器：</h3>
+            <p>E F&nbsp;&nbsp;&nbsp;&nbsp;后代选择器&nbsp;&nbsp;&nbsp;&nbsp;选择匹配的F元素，F在E元素内</p>
+            <p>E>F&nbsp;&nbsp;&nbsp;&nbsp;子选择器&nbsp;&nbsp;&nbsp;&nbsp;选择匹配的F元素，F是匹配E元素的子元素</p>
+            <p>E+F&nbsp;&nbsp;&nbsp;&nbsp;相邻兄弟选择器&nbsp;&nbsp;&nbsp;&nbsp;选择匹配的E元素后的相邻的F元素</p>
+            <p>E～F&nbsp;&nbsp;&nbsp;&nbsp;通用选择器&nbsp;&nbsp;&nbsp;&nbsp;选择匹配的F元素，匹配的E元素后所有F元素</p>
+            <p>除了后代选择器兼容全部浏览器外，其它三个层次选择器兼容IE7及以上全部浏览器</p>
+        </div>
+        <div class="pseudoClass-selector">
+            <h3>伪类选择器</h3>
+            <div class="dynamiPseudoClass-selector">
+                <h3>动态伪类选择器：</h3>
+                <p>动态伪类分为两种：锚点伪类和用户行为伪类</p>
+                <p>E:link&nbsp;&nbsp;链接伪类&nbsp;&nbsp;选择匹配的E元素，匹配元素被定义了超链接并未被访问过，常用于链接锚点上</p>
+                <p>E:visited&nbsp;&nbsp;链接伪类&nbsp;&nbsp;选择匹配的E元素，匹配元素被定义了超链接并已被访问过，常用于链接锚点上</p>
+                <p>E:hover&nbsp;&nbsp;用户行为伪类&nbsp;&nbsp;选择匹配的E元素，用户鼠标放在匹配的E元素上，IE6中只支持a:hover</p>
+                <p>E:active&nbsp;&nbsp;用户行为伪类&nbsp;&nbsp;选择匹配的E元素，匹配元素被点击激活，常用于链接锚点与按钮上</p>
+                <p>E:focus&nbsp;&nbsp;用户行为伪类&nbsp;&nbsp;选择匹配的E元素，匹配元素获取焦点</p>
+                <p>锚点伪类遵循爱恨原则：link-visited-hover-active</p>
+                <p>浏览器兼容：link、visited支持全部浏览器，hover、focus、active支持IE8及以上和其它全部浏览器</p>
+            </div>
+            <div class="targetPseudoClass-selector">
+                <h3>目标伪类选择器：</h3>
+                <p>E:target&nbsp;&nbsp;选择匹配E的所有元素，且匹配元素被相关URL指向</p>
+                <p>浏览器兼容性：IE9及以上，Opera9.6及以上以及其它全部主流浏览器都支持</p>
+            </div>
+            <div class="lanPseudoClass-selector">
+                <h3>语言伪类选择器：</h3>
+                <p>E:lang(en)&nbsp;&nbsp;选择匹配E的所有元素，且匹配元素指定了lang属性，而且其值为language</p>
+                <p>浏览器兼容性：IE8及以上、Opera9.2及以上浏览器全部兼容</p>
+            </div>
+            <div class="UIPseudoClass-selector">
+                <h3>UI状态伪类选择器：</h3>
+                <p></p>
+            </div>
+            <div class="structurePseudoClass-selector">
+                <h3>结构伪类选择器：</h3>
+                <p></p>
+            </div>
+            <div class="negativePseudoClass-selector">
+                <h3>否定伪类选择器：</h3>
+                <p></p>
+            </div>
+        </div>
         <div class="css3-examples">
             <h3>练习题：</h3>
-            <p>1.18页 基本选择器实现一排背景圆形背景色粉色的排列的数字</p>
+            <p>1.18页，基本选择器实现一排背景圆形背景色粉色的排列的数字</p>
+            <p>2.27页，利用动态伪类选择器美化按钮</p>
+            <p>3.30页，利用目标伪类选择器制作手风琴效果</p>
+            <p>4.33页，利用目标伪类选择器制作高亮显示区域、突出显示多个盒模型或图片中的一个、tabs效果、幻灯片效果、灯箱效果、相册效果，虽然纯css也可以实现这些效果，但其中有些效果还是用js来实现其易用和可用性更好</p>
         </div>
     </div>
 </body>
