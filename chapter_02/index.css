@@ -3,6 +3,15 @@ body {
     padding: 0px;
 }
 
-.css3_selector {
+* {
+    margin:  0px;
+    padding: 0px;
+}
+
+.css3-selector {
     text-align: center;
+}
+
+.basic-selector {
+    
 }
