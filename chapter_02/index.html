@@ -63,7 +63,18 @@
             </div>
             <div class="structurePseudoClass-selector">
                 <h3>结构伪类选择器：</h3>
-                <p></p>
+                <p>E:first-child&nbsp;&nbsp;匹配作为父元素的第一个子元素E元素，等同于E:nth-child(1)</p>
+                <p>E:last-child&nbsp;&nbsp;匹配作为父元素的最后一个子元素E元素，等同于E:nth-last-child(1)</p>
+                <p>E:root&nbsp;&nbsp;匹配E父元素所在文档的根结点，在文档中根结点都是html节点</p>
+                <p>E F:nth-child(n)&nbsp;&nbsp;匹配父元素E的第n个子元素F元素，其中n可以是整数(1，2，3)、关键字(even、odd)、可以是公式(2n+1、-n+5)，n是从1开始而不是0</p>
+                <p>E F:nth-last-child(n)&nbsp;&nbsp;匹配父元素E的倒数第n个子元素F元素</p>
+                <p>E:nth-of-type(n)&nbsp;&nbsp;匹配父元素内具有指定类型的第n个E元素</p>
+                <p>E:nth-last-of-type(n)&nbsp;&nbsp;匹配父元素内具有指定类型的倒数第n个E元素</p>
+                <p>E:nth-first-of-type&nbsp;&nbsp;匹配父元素内具有指定类型的第一个E元素，等同于E:nth-of-type(1)</p>
+                <p>E:nth-last-of-type&nbsp;&nbsp;匹配父元素内具有指定类型的倒数第一个E元素，等同于E:nth-last-of-type(1)</p>
+                <p>E:only-child&nbsp;&nbsp;选择父元素只包含一个子元素，且子元素匹配E元素</p>
+                <p>E:only-of-type&nbsp;&nbsp;选择父元素只包含一个同类型的子元素，且该元素匹配E元素</p>
+                <p>E:empty&nbsp;&nbsp;选择没有子元素的元素，且该元素不包含任何文本节点</p>
             </div>
             <div class="negativePseudoClass-selector">
                 <h3>否定伪类选择器：</h3>
