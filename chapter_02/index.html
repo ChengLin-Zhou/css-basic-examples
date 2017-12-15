@@ -93,8 +93,14 @@
         </div>
         <div class="attr-selector">
             <h3>属性选择器</h3>
-            <p></p>
-            <p>浏览器兼容性：</p>
+            <p>E[attr]&nbsp;&nbsp;匹配具有attr属性的E元素，可省略E，表示选择定义了attr属性的元素</p>
+            <p>E[attr=val]&nbsp;&nbsp;匹配具有attr属性且值为val(区分大小写)的E元素，可省略E，表示选择定义了attr属性且值为val的元素</p>
+            <p>E[attr|=val]&nbsp;&nbsp;匹配E元素，且E元素定义了属性attr，attr属性值是一个具有val或者val-开始的属性值常用于lang属性，如 p[lang=en-us]</p>
+            <p>E[attr~=val]&nbsp;&nbsp;匹配E元素，且E元素定义了属性attr，attr属性值具有多个空格分隔的值且有值是val，如 <a title="hehe val ddas"></a></p>
+            <p>E[attr*=val]&nbsp;&nbsp;匹配E元素，且E元素定义了属性attr，attr属性值任意位置是val</p>
+            <p>E[attr^=val]&nbsp;&nbsp;匹配E元素，且E元素定义了属性attr，attr属性值以val开头的任何字符串</p>
+            <p>E[attr$=val]&nbsp;&nbsp;匹配E元素，且E元素定义了属性attr，attr属性值以val结尾的任何字符串</p>
+            <p>浏览器兼容性：兼容IE7及以上和其它主流浏览器</p>
         </div>
         <div class="css3-examples">
             <h3>练习题：</h3>
@@ -106,6 +112,7 @@
             <p>6.48页-66页，数字列表等实例进行不同结构状态伪类的详细使用</p>
             <p>7.67页，改变图片效果，利用否定伪类</p>
             <p>8.70页，创建首字下沉</p>
+            <p>9.77页，利用属性选择器进行不同元素的控制</p>
         </div>
     </div>
 </body>
