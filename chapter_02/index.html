@@ -85,8 +85,11 @@
         </div>
         <div class="pseudoEle-selector">
             <h3>伪元素选择器</h3>
-            <p></p>
-            <p>浏览器兼容性：</p>
+            <p>::first-letter&nbsp;&nbsp;选择文本块的第一个字母，除非在同一行中有其它元素</p>
+            <p>::first-line&nbsp;&nbsp;选择文本块的第一行文本，除非在同一行中有其它元素</p>
+            <p>::before和::after&nbsp;&nbsp;不是指存在于标记中的内容，而是可以额外插入的内容，生成的内容不会成为DOM的一部分，但可以为其设置样式，同时这两个伪元素还可以用作清除浮动，要用它生成内容需借助content属性</p>
+            <p>::selection&nbsp;&nbsp;匹配浏览器默认突出显示的内容</p>
+            <p>浏览器兼容性：::selection仅兼容IE系列中的IE9，兼容Opera9.5+及以上，需加上-moz-，支持所有webkit内核的浏览器；IE6-8只支持单冒号写法</p>
         </div>
         <div class="attr-selector">
             <h3>属性选择器</h3>
@@ -102,6 +105,7 @@
             <p>5.37页，利用UI状态伪类实现bootstrap表单元素ui状态</p>
             <p>6.48页-66页，数字列表等实例进行不同结构状态伪类的详细使用</p>
             <p>7.67页，改变图片效果，利用否定伪类</p>
+            <p>8.70页，创建首字下沉</p>
         </div>
     </div>
 </body>
