@@ -12,3 +12,49 @@
     background: red;
     color: white;
 }
+
+
+.practice .structure-pseudo-class>div p:first-child {
+    color: orange;
+}
+.practice .structure-pseudo-class>div p:last-child {
+    color: orangered;
+}
+.practice .structure-pseudo-class>ul li:nth-child(3) {
+    font-size: 20px;
+}
+.practice .structure-pseudo-class>ul li:nth-last-child(2) {
+    font-size: 20px;
+}
+.practice .structure-pseudo-class>ul li:nth-last-child(2n-1) {
+    background: orchid;
+    color: white;
+}
+.practice .structure-pseudo-class>div b:nth-of-type(2) {
+    color: skyblue;
+}
+.practice .structure-pseudo-class>div span:nth-last-of-type(2) {
+    color: fuchsia;
+}
+.practice .structure-pseudo-class>div b:nth-first-of-type {
+    color: green;
+}
+.practice .structure-pseudo-class>div p:first-child span:only-child{
+    font-size: 30px;
+}
+.practice .structure-pseudo-class>div p:first-child span:only-of-type{
+    background: sienna
+}
+.practice .structure-pseudo-class>div span:empty {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
+.practice .structure-pseudo-class>ul p:last-of-type {
+    font-size: 30px;
+    color: darkblue;
+}
+.practice .structure-pseudo-class>ul p:first-of-type {
+    font-size: 30px;
+    color: darkblue;
+}
