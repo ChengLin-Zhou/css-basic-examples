@@ -58,3 +58,7 @@
     font-size: 30px;
     color: darkblue;
 }
+
+.practice .structure-pseudo-class>ul p:not(li) {
+    background: darkcyan;
+}
