@@ -62,3 +62,21 @@
 .practice .structure-pseudo-class>ul p:not(li) {
     background: darkcyan;
 }
+
+.practice .pseudo-ele p::first-letter {
+    font-size: 50px;
+}
+.practice .pseudo-ele p::first-line {
+    color: darkkhaki
+}
+.practice .pseudo-ele div::before {
+    content: "hahaha: ";
+}
+.practice .pseudo-ele div::after {
+    width: 100px;
+    background: darkorange;
+    content: "end";
+}
+.practice .pseudo-ele::selection {
+    font-size: 30px;
+}
