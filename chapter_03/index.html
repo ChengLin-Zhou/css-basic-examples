@@ -10,8 +10,19 @@
 <body>
     <div class="content">
         <h3>css边框(border)</h3>
-        <p>css2中包括三个类型值：border-width、border-color、border-style，合并到一起：border: border-width border-color border-style</p>
-        <p></p>
+        <p>css2中包括三个类型值：border-width、border-color、border-style，可以接受写法是一个值(四条边统一使用这个值)、两个值(第一个值代表上下边框、第二个代表左右)、三个值(第一个值代表上、第二个值代表左右)、四个值(分别代表各条边框从顶部开始)，合并到一起：border: border-width border-color border-style</p>
+        <p>单独分开写：border-top-width、border-top-color、border-top-style</p>
+        <p>border边框类型：none(默认)、hidden(与none相同，但是应用于表中则是解决边框冲突)、dotted(点状边框)、dashed(虚线)、solid(实线)、double(双线，宽度等于border-width)、groove(3d凹槽，取决于border-color)、ridge(3d垄状)、inset(3d inset)、outset(3d outset)、inherit(从父元素继承边框类型，许多浏览器暂不支持)</p>
+        <p>css3中的类型：border-color、border-image、border-radius、box-shadow</p>
+        <p>border-color属性：[color | transparent]{1,4} | inherit正常写法；css3中拆开写：border-top-colors：[color | transparent]{1,4} | inherit，n个值就代表一条边框上有n个颜色值，如果边框宽度是n，如果边框宽度大于n则最后一个颜色值补齐；暂时只兼容火狐3.0+</p>
+        <p>border-image属性：none | image [number | percentage]{1,4} ?[stretch | repeat | round]{0,2}，浏览器兼容性：IE暂不支持，火狐3.5+、chorme3+、Opera10.5+、safari1.0+</p>
+        <p>border-radius属性：none | [length{1,4} \length{1,4}]，兼容性：IE9+、火狐3.0+、chorme1.0+、opera10.5+、safari3.0+</p>
+        <div>
+            <h3>练习题：</h3>
+            <p>1.91页，利用border-color制作立体渐变边框效果</p>
+            <p>2.101页，利用border-image制作圆角按钮和tabs</p>
+            <p>3.115页，利用border-radius制作特殊图形</p>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
