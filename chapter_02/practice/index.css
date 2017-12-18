@@ -1,0 +1,14 @@
+.practice {
+    padding: 10px 50px;
+}
+.practice input:checked {
+    width: 20px;
+    height: 20px;
+}
+.practice input:enabled {
+    background: green;
+}
+.practice button:disabled {
+    background: red;
+    color: white;
+}
