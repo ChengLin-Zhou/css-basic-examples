@@ -80,3 +80,15 @@
 .practice .pseudo-ele::selection {
     font-size: 30px;
 }
+
+
+
+.practice .attr p[id] {
+    color: darksalmon;
+}
+.practice .attr p[id=firstP] {
+    font-size: 30px;
+}
+.practice .attr p[class~=last] {
+    font-size: 30px;
+}
