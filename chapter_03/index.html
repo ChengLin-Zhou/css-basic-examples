@@ -17,11 +17,27 @@
         <p>border-color属性：[color | transparent]{1,4} | inherit正常写法；css3中拆开写：border-top-colors：[color | transparent]{1,4} | inherit，n个值就代表一条边框上有n个颜色值，如果边框宽度是n，如果边框宽度大于n则最后一个颜色值补齐；暂时只兼容火狐3.0+</p>
         <p>border-image属性：none | image [number | percentage]{1,4} ?[stretch | repeat | round]{0,2}，浏览器兼容性：IE暂不支持，火狐3.5+、chorme3+、Opera10.5+、safari1.0+</p>
         <p>border-radius属性：none | [length{1,4} \length{1,4}]，兼容性：IE9+、火狐3.0+、chorme1.0+、opera10.5+、safari3.0+</p>
+        <p>css3的box-shadow属性(定义元素的盒子阴影)：</p>
+        <p>用法：box-shadow: none|[inset x-offset y-offset blur-radius spread-radius color],[inset x-offset y-offset blur-radius spread-radius color]</p>
+        <p>
+            各值意义：<br/>
+            none: 默认没有任何阴影效果<br/>
+            inset: 阴影类型，默认为外阴影，inset为内阴影<br/>
+            x-offset: 阴影水平偏移量，可为正负值，正值阴影在元素的右边，负值则相反<br/>
+            y-offset: 阴影垂直偏移量，可为正负值，正值阴影在元素的底部，负值则相反<br/>
+            blur-radius: 阴影模糊半径，可选值只能为正值，如果为0，不具有模糊效果，值越大边缘越模糊<br/>
+            spread-radius: 阴影扩展半径，可选值正负值都可以，若为正值，整个阴影都延展扩大，反之阴影缩小<br/>
+            color: 阴影颜色，不设置值会取默认色<br/>
+            浏览器兼容性：IE9+、火狐3.5+、chorme2.0+、Opera10.5+、Safari4.0+；Firefox3.5-3.6需要加前缀-moz-，chrome4-9和Safari3.1-5.0需要加-webkit，
+            低版本IE可使用filtter滤镜来模拟实现或者用PIE或者IE-css3来实现
+        </p>
         <div>
             <h3>练习题：</h3>
             <p>1.91页，利用border-color制作立体渐变边框效果</p>
             <p>2.101页，利用border-image制作圆角按钮和tabs</p>
             <p>3.115页，利用border-radius制作特殊图形</p>
+            <p>4.127页，图片内阴影效果，多层阴影效果，利用多层阴影制作多色边框</p>
+            <p>5.130页，3d搜索表单</p>
         </div>
     </div>
     <script src="index.js"></script>
