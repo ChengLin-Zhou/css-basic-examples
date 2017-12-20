@@ -46,8 +46,13 @@
         <div>
             <h3>css3中新增属性：</h3>
             <div>
-                <h3>background-origin属性：</h3>
-                <p></p>
+                <h3>background-origin属性：决定background-position参考原点，都是在attachment为scroll时有效</h3>
+                <p>background-origin: padding || border || content 早期webkit和Gecko内核浏览器(Firefox3.6-、Safari和chorme低版本)</p>
+                <p>background-origin: padding-box || border-box || content-box (支持IE9、Firefox4+、chrome4+、Safari3+、Opera10.5+)</p>
+                <p>padding-box: 决定background-position的起始位置从padding的外边缘border的内边缘显示背景</p>
+                <p>border-box: 决定background-position的起始位置从border的外边缘显示背景</p>
+                <p>content-box: 决定background-position的起始位置从content的外边缘padding的内边缘显示背景</p>
+                <p>浏览器兼容性：IE9、Firefox3+、chrome1+、Safari3+、Opera10.5+</p>
             </div>
             <div>
                 <h3>background-clip属性：</h3>
