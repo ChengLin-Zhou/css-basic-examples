@@ -46,7 +46,7 @@
         <div>
             <h3>css3中新增属性：</h3>
             <div>
-                <h3>background-origin属性：决定background-position参考原点，都是在attachment为scroll时有效</h3>
+                <h3>background-origin属性：决定background-position参考原点，都是在attachment为scroll时有效，不同浏览器需要前缀</h3>
                 <p>background-origin: padding || border || content 早期webkit和Gecko内核浏览器(Firefox3.6-、Safari和chorme低版本)</p>
                 <p>background-origin: padding-box || border-box || content-box (支持IE9、Firefox4+、chrome4+、Safari3+、Opera10.5+)</p>
                 <p>padding-box: 决定background-position的起始位置从padding的外边缘border的内边缘显示背景</p>
@@ -56,6 +56,11 @@
             </div>
             <div>
                 <h3>background-clip属性：</h3>
+                <p>background-clip: padding || border || content 早期webkit和Gecko内核浏览器(Firefox3.6-、Safari和chorme低版本)</p>
+                <p>background-clip: padding-box || border-box || content-box Gecko内核浏览器(Firefox3.6-不支持content-box用border和padding代替另外两个，Safari5中支持标准border-box和padding-box但是必须加前缀才支持content-box，在此前缀下支持一个特殊属性text，可让文本作为背景的遮罩，不在文本之后的背景不可见)</p>
+                <p>padding-box: 元素背景图像从元素的padding区域向外裁剪，bpadding之外的背景裁剪掉</p>
+                <p>border-box: 元素背景图像从元素的border区域向外裁剪，border之外的背景裁剪掉</p>
+                <p>content-box: 元素背景图像从元素的content区域向外裁剪，content之外的背景裁剪掉</p>
                 <p></p>
             </div>
             <div>
