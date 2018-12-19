@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="background-attr">
+        <h3>css3背景</h3>
+        <div>
+            <h3>background五个属性(3之前版本就有的属性)：</h3>
+            <p>background-color属性</p>
+            <p>background-image属性</p>
+            <p>background-repeat属性</p>
+            <p>background-position属性</p>
+            <p>background-attachment属性</p>
+        </div>
+        <div>
+            <h3>background用法：</h3>
+            <p>background: [background-color] [,background-image] [,background-repeat] [,background-attachment] [,background-position]</p>
+        </div>
+        <div>
+            <h3>background-color属性：</h3>
+            <p>background-color: transparent || color</p>
+            <p>color可选值：颜色名:red || rgb(255,0,0)或(100%,0%,0%) || hsl(0,100%,50%) || 十六进制#fffeee || css3中可用：rgba(255,0,0,.3) || hsla(0,100%,50%,.3)</p>
+        </div>
+        <div>
+            <h3>background-image属性：</h3>
+            <p>background-image: none || url(path)</p>
+        </div>
+        <div>
+            <h3>background-repeat属性：</h3>
+            <p>background-repeat: no-repeat || repeat || repeat-x || repeat-y</p>
+        </div>
+        <div>
+            <h3>background-atachment属性：</h3>
+            <p>background-atachment: scroll || fixed</p>
+        </div>
+        <div>
+            <h3>background-position属性：</h3>
+            <p>background-position: percentage || length || [left | center | right] [,top | center | bottom]</p>
+        </div>
+        <div>
+            <h3>css3中新增属性：</h3>
+            <div>
+                <h3>background-origin属性：决定background-position参考原点，都是在attachment为scroll时有效，不同浏览器需要前缀</h3>
+                <p>background-origin: padding || border || content 早期webkit和Gecko内核浏览器(Firefox3.6-、Safari和chorme低版本)</p>
+                <p>background-origin: padding-box || border-box || content-box (支持IE9、Firefox4+、chrome4+、Safari3+、Opera10.5+)</p>
+                <p>padding-box: 决定background-position的起始位置从padding的外边缘border的内边缘显示背景</p>
+                <p>border-box: 决定background-position的起始位置从border的外边缘显示背景</p>
+                <p>content-box: 决定background-position的起始位置从content的外边缘padding的内边缘显示背景</p>
+                <p>浏览器兼容性：IE9、Firefox3+、chrome1+、Safari3+、Opera10.5+</p>
+            </div>
+            <div>
+                <h3>background-clip属性：需要加前缀</h3>
+                <p>background-clip: padding || border || content 早期webkit和Gecko内核浏览器(Firefox3.6-、Safari和chorme低版本)</p>
+                <p>background-clip: padding-box || border-box || content-box Gecko内核浏览器(Firefox3.6-不支持content-box用border和padding代替另外两个，Safari5中支持标准border-box和padding-box但是必须加前缀才支持content-box，在此前缀下支持一个特殊属性text，可让文本作为背景的遮罩，不在文本之后的背景不可见)</p>
+                <p>padding-box: 元素背景图像从元素的padding区域向外裁剪，bpadding之外的背景裁剪掉</p>
+                <p>border-box: 元素背景图像从元素的border区域向外裁剪，border之外的背景裁剪掉</p>
+                <p>content-box: 元素背景图像从元素的content区域向外裁剪，content之外的背景裁剪掉</p>
+                <p>浏览器兼容性：IE9、Firefox4+、chrome4+、Safari5+、Opera10.5+</p>
+            </div>
+            <div>
+                <h3>background-size属性：指定背景图片的尺寸，控制背景图片在水平和垂直两个方向上的大小</h3>
+                <p>用法background-size: auto | length | percentage | cover | contain; auto是默认大小、length取具体整数值改变背景图片大小、cover将背景图片放大以适合铺满整个容器，图片会失真、contain保持图片原比例缩放到设置元素大小</p>
+                <p>浏览器兼容性：IE9+、Firefox3.6+、chrome4+、Safari3+、Opera10+</p>
+            </div>
+            <div>
+                <h3>background-break属性：内联元素背景图片进行平铺时的循环方式</h3>
+                <p>用法background-break: bounding-box | each-box | continuous; 在整个内联元素中平铺、在行内中平铺、下一行图像紧接着上一行图像平铺</p>
+            </div>
+        </div>
+        <div>
+            <h3>练习题：</h3>
+            <p>1.136页，background-position练习</p>
+            <p>2.147页，背景图片文本填充效果</p>
+            <p>3.157页，制作花边框</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
